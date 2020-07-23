@@ -1,0 +1,6 @@
+Color:
+Black: #111111;
+Grey: #323232;
+background color: #FFFFFF;
+Tile background: #DD791F;
+Big background: #222222;

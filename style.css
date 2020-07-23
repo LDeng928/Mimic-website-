@@ -1,0 +1,155 @@
+:root {
+  --backgound-color: #222222;
+  --tab-color: #dd791f;
+  --second-background: #ffffff;
+  --grey-color: #323232;
+  --black-color: #111111;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--backgound-color);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Big container*/
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/*Scoial Media*/
+.media-list {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--black-color);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.socialMedia a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/*Title section*/
+.title {
+  display: flex;
+  justify-content: space-between;
+  background: var(--grey-color);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.title img {
+  overflow: hidden;
+}
+
+/*Nav links*/
+.nav {
+  background: var(--black-color);
+  color: white;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links i {
+  padding-left: 0.3rem;
+}
+
+.nav-links li:hover {
+  color: var(--tab-color);
+  transform: ease 0.1s;
+}
+
+/*Second background*/
+.second-container {
+  background: var(--second-background);
+  z-index: 1;
+}
+
+/*Showcase*/
+.showcase-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.showcase-img img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*Showcase grid*/
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.showcase-grid img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*Post area*/
+.main-post {
+  grid-area: main;
+}
+.side-post {
+  grid-area: side;
+}
+
+.post-area {
+  display: grid;
+  grid-template-areas: "main main main main main side side";
+  grid-gap: 1.5rem;
+}
+
+.main-post h1 {
+  padding: 0.6rem;
+  background: var(--tab-color);
+  text-align: center;
+}
+
+.side-post h1 {
+  padding: 0.6rem;
+  background: var(--tab-color);
+  text-align: center;
+}
